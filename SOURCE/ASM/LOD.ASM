@@ -1,5 +1,5 @@
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 ; 같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 ;

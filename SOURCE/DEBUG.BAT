@@ -1,1 +1,1 @@
-exec\td dosman.exe
+td dosman.exe

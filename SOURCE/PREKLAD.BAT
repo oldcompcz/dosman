@@ -1,12 +1,8 @@
 @echo off
-if not exist obj\*.* md OBJ
 
-exec\make dm.mak /d
+cd asm
+make
 if errorlevel == 1 goto konec
-
-cd obj
-..\exec\tlink @..\link.fil, ..\dosman.exe /m;
 cd ..
 
 :konec
-

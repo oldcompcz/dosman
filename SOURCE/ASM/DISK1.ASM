@@ -11,7 +11,7 @@
 ;
 ; 같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 CodeDisk SEGMENT   BYTE PUBLIC
          ASSUME    cs:CodeDisk,ds:Data
@@ -3047,7 +3047,7 @@ Int13    ENDP
 ; -----------------------------------------------------------------------------
 
 NOCOM    EQU       1                        ; pæznak pro p쯥klad jako INCLUDE
-INCLUDE  DOSMFLOP\DOSMFLOP.ASM              ; BOOT sektor
+INCLUDE  ..\DOSMFLOP\DOSMFLOP.ASM           ; BOOT sektor
 
 CodeDisk ENDS
 

@@ -61,7 +61,7 @@
 ;
 ; 같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 CodeMnu  SEGMENT   BYTE PUBLIC
          ASSUME    cs:CodeMnu,ds:Data

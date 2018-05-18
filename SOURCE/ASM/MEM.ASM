@@ -30,7 +30,7 @@
 ;
 ; 같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 CodeMem  SEGMENT   BYTE PUBLIC
          ASSUME    cs:CodeMem,ds:Data

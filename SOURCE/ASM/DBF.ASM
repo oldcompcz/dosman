@@ -13,7 +13,7 @@
 ; °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 CodeDbf  SEGMENT   BYTE PUBLIC
          ASSUME    cs:CodeDbf,ds:Data
@@ -2505,9 +2505,9 @@ DBFOdRad db        "."                      ; oddˆlova‡ © d–
 
 CodeDbf  ENDS
 
-INCLUDE  ASM\DBF1.ASM                       ; obsluha seznamu soubor– k v˜bˆru
-INCLUDE  ASM\DBF2.ASM
-;INCLUDE  ASM\DBF3.ASM
+INCLUDE  DBF1.ASM                           ; obsluha seznamu soubor– k v˜bˆru
+INCLUDE  DBF2.ASM
+;INCLUDE  DBF3.ASM
 
 ; °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 ;

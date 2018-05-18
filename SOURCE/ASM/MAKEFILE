@@ -1,0 +1,147 @@
+#  Makefile for dosman.
+#
+#
+#  Usage:   make -B         # dosman
+#           make -B -DDEBUG # dosman with debug info
+#
+
+!if $d(DEBUG)
+TASMDEBUG=/z/t/m5/zi
+TASMDEBUG1=/z/t/m5/zd
+LINKDEBUG=/m/v
+!else
+TASMDEBUG=/z/t/m5/zi
+TASMDEBUG1=/z/t/m5/zd
+LINKDEBUG=/m
+!endif
+
+OBJFILES = dm.obj dm2.obj mnu3.obj zap.obj tab.obj win1.obj win2.obj win3.obj tre.obj dbf.obj dbf3.obj edi.obj edi1.obj edi2.obj edi3.obj lod.obj zvl1.obj zvl2.obj mem.obj fnd.obj fil1.obj fil2.obj fil3.obj fil4.obj fil5.obj fil6.obj und.obj mnu1.obj mnu2.obj int.obj hlp.obj lin.obj dis.obj key.obj disk.obj disk1.obj disk2.obj disk3.obj diskf.obj dek.obj
+OBJFILES1 = dm dm2 mnu3 zap tab win1 win2 win3 tre dbf dbf3 edi edi1 edi2 edi3 lod zvl1 zvl2 mem fnd fil1 fil2 fil3 fil4 fil5 fil6 und mnu1 mnu2 int hlp lin dis key disk disk1 disk2 disk3 diskf dek
+dosman.exe:      $(OBJFILES)      
+      tlink @..\link.fil, ..\dosman.exe /m
+      
+      
+dm.obj:         dm.asm def.asm
+		tasm $(TASMDEBUG) dm
+
+dm2.obj:	dm2.asm def.asm
+		tasm $(TASMDEBUG) dm2
+
+mnu3.obj:	mnu3.asm def.asm
+		tasm $(TASMDEBUG) mnu3
+
+zap.obj:	zap.asm def.asm
+		tasm $(TASMDEBUG) zap
+
+tab.obj:	tab.asm def.asm
+		tasm $(TASMDEBUG) tab
+
+win1.obj:	win1.asm def.asm
+		tasm $(TASMDEBUG) win1
+
+win2.obj:	win2.asm def.asm
+		tasm $(TASMDEBUG) win2
+
+win3.obj:	win3.asm def.asm
+		tasm $(TASMDEBUG) win3
+
+tre.obj:	tre.asm def.asm
+		tasm $(TASMDEBUG) tre
+
+dbf.obj:	dbf.asm dbf1.asm dbf2.asm def.asm
+		tasm $(TASMDEBUG1) dbf
+
+dbf3.obj:	dbf3.asm def.asm
+		tasm $(TASMDEBUG1) dbf3
+
+edi.obj:	edi.asm def.asm
+		tasm $(TASMDEBUG) edi
+
+edi1.obj:	edi1.asm def.asm
+		tasm $(TASMDEBUG) edi1
+
+edi2.obj:	edi2.asm def.asm
+		tasm $(TASMDEBUG) edi2
+
+edi3.obj:	edi3.asm def.asm
+		tasm $(TASMDEBUG) edi3
+
+lod.obj:	lod.asm def.asm
+		tasm $(TASMDEBUG) lod
+
+zvl1.obj:	zvl1.asm def.asm
+		tasm $(TASMDEBUG) zvl1
+
+zvl2.obj:	zvl2.asm def.asm
+		tasm $(TASMDEBUG) zvl2
+
+mem.obj:	mem.asm def.asm
+		tasm $(TASMDEBUG) mem
+
+fnd.obj:	fnd.asm def.asm
+		tasm $(TASMDEBUG) fnd
+
+fil1.obj:	fil1.asm def.asm
+		tasm $(TASMDEBUG) fil1
+
+fil2.obj:	fil2.asm def.asm
+		tasm $(TASMDEBUG) fil2
+
+fil3.obj:	fil3.asm def.asm
+		tasm $(TASMDEBUG) fil3
+
+fil4.obj:	fil4.asm def.asm
+		tasm $(TASMDEBUG) fil4
+
+fil5.obj:	fil5.asm def.asm
+		tasm $(TASMDEBUG) fil5
+
+fil6.obj:	fil6.asm def.asm
+		tasm $(TASMDEBUG) fil6
+
+und.obj:	und.asm def.asm
+		tasm $(TASMDEBUG) und
+
+mnu1.obj:	mnu1.asm def.asm
+		tasm $(TASMDEBUG) mnu1
+
+mnu2.obj:	mnu2.asm def.asm
+		tasm $(TASMDEBUG) mnu2
+
+int.obj:	int.asm def.asm
+		tasm $(TASMDEBUG) int
+
+hlp.obj:	hlp.asm def.asm
+		tasm $(TASMDEBUG) hlp
+
+lin.obj:	lin.asm def.asm
+		tasm $(TASMDEBUG) lin
+
+dis.obj:	dis.asm def.asm
+		tasm $(TASMDEBUG) dis
+
+key.obj:	key.asm def.asm
+		tasm $(TASMDEBUG) key
+
+disk.obj:	disk.asm def.asm
+		tasm $(TASMDEBUG) disk
+
+disk1.obj:	disk1.asm def.asm
+		tasm $(TASMDEBUG) disk1
+
+disk2.obj:	disk2.asm def.asm
+		tasm $(TASMDEBUG) disk2
+
+disk3.obj:	disk3.asm def.asm
+		tasm $(TASMDEBUG) disk3
+
+diskf.obj:	diskf.asm def.asm
+		tasm $(TASMDEBUG) diskf
+
+dek.obj:	dek.asm def.asm
+		tasm $(TASMDEBUG) dek
+
+clean:
+                del *.obj
+                del ..\dosman.exe 
+                del ..\dosman.map

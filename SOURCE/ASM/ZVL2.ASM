@@ -12,7 +12,7 @@
 ;
 ; 같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 CodeZvl  SEGMENT   BYTE PUBLIC
          ASSUME    cs:CodeZvl,ds:Data

@@ -10,7 +10,7 @@
 ;
 ; 같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 HelpMSiz EQU       1000h                    ; velikost segmentu n쟰ov늕y (=4 KB)
 

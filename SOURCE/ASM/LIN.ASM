@@ -26,7 +26,7 @@
 ;
 ; 같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 CodeLin  SEGMENT   BYTE PUBLIC
          ASSUME    cs:CodeLin,ds:Data

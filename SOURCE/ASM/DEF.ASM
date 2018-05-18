@@ -211,7 +211,7 @@ DTAMax   EQU       46                       ; velikost tabulky DTA
 ; -----------------------------------------------------------------------------
 
 HelpDef  STRUC
-INCLUDE  ASM\HELP@DEF.ASM                   ; symboly odkaz– do n povˆdy
+INCLUDE  HELP@DEF.ASM                   ; symboly odkaz– do n povˆdy
 HelpDef  ENDS
 
 ; ------ znaky p©ep¡na‡– pro menu

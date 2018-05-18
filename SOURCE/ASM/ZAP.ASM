@@ -13,7 +13,7 @@
 ; 같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 CodeZap  SEGMENT   BYTE PUBLIC
          ASSUME    cs:CodeZap,ds:Data

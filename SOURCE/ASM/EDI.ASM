@@ -17,7 +17,7 @@
 ;BLOKMAXN EQU       ((65535 - EdiABlok)/EdiBlokS)-1-4; maxim ln¡ po‡et blok– souboru
 ;MAXVTAB  EQU       8*30                     ; maxim lnˆ pozic promˆn. tabul tor–
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 CodeEdi  SEGMENT   BYTE PUBLIC
          ASSUME    cs:CodeEdi,ds:Data

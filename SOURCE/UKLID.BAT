@@ -1,7 +1,6 @@
-if not exist obj\*.obj goto NOBJ
-del obj\*.obj
-rd obj
-:NOBJ
+cd asm
+make clean
+cd ..
 
 if exist $DOSMAN$.HIS del $DOSMAN$.HIS
 if exist $DOSMAN$.TRE del $DOSMAN$.TRE

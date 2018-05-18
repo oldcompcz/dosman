@@ -63,7 +63,7 @@
 ;
 ; 같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 CodeWin  SEGMENT   BYTE PUBLIC
          ASSUME    cs:CodeWin,ds:Data

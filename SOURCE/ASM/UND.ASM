@@ -11,7 +11,7 @@
 ;
 ; 같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 CodeUnd  SEGMENT   BYTE PUBLIC
          ASSUME    cs:CodeUnd,ds:Data

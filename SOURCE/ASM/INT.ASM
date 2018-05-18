@@ -9,7 +9,7 @@
 ;
 ; 같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 CodeInt  SEGMENT   BYTE PUBLIC
          ASSUME    cs:CodeInt,ds:Data

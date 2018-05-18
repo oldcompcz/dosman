@@ -52,7 +52,7 @@
 ; 같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
 
-INCLUDE  ASM\DEF.ASM
+INCLUDE  DEF.ASM
 
 Code     SEGMENT   WORD PUBLIC
          ASSUME    cs:Code,ds:Data
