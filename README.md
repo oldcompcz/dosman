@@ -1,6 +1,6 @@
 # DOS Manažer
 
-Author: Miroslav Němeček.
+Author: [Miroslav Němeček](https://github.com/oldcompcz/readme/wiki/Nemecek).
 
 ![DOSM.png](DOC/DOSM.png)
 
